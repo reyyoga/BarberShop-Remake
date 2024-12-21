@@ -1,0 +1,169 @@
+
+  /* Tombol Live Chat dengan icon */
+  #livechat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d6a354;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Close button styling */
+#close-chat {
+  font-size: 24px; /* Increase size of X */
+  background: none;
+  border: none;
+  color: #7e60add0;  /* Set color to the specified soft purple */
+  cursor: pointer;
+}
+
+#close-chat:hover {
+  color: #7a4e9e;  /* Slightly darker shade when hovering */
+}
+  #livechat-button img {
+    width: 40px; /* Ukuran gambar icon */
+    height: 40px; /* Ukuran gambar icon */
+  }
+  
+  #chat-window {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Awalnya disembunyikan */
+    flex-direction: column;
+    z-index: 9998;
+  }
+  
+  .chat-header {
+    background-color: #d6a354;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .chat-messages {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 80%;
+  }
+  
+  .chat-message.bot {
+    background-color: #f1f1f1;
+  }
+  
+  .chat-message.user {
+    background-color: #d6a354;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .chat-input button {
+    background-color: #d6a354;
+    color: white;
+    padding: 10px;
+    margin-left: -70px;
+    border-radius: 5px;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+    gap: 5px;
+  }
+/* dropdown */
+/* For Profile Dropdown */
+#profile-nav {
+  position: relative;
+  font-size: 20px; 
+  
+}
+
+#dropdown-menu {
+  display: none; /* Default hidden */
+  position: absolute;
+  top: 100%; /* Dropdown muncul di bawah elemen */
+  left: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 180px;
+  font-family: 'Unbounded', cursive;
+  font-weight: bold; /* Bold text */
+  font-size: 20px; 
+  text-transform: uppercase; /* Capitalize font */
+  z-index: 1000; /* Ensure dropdown appears above other content */
+}
+
+#dropdown-menu li a {
+  color: #000000; /* Darker color for text */
+  padding: 10px 20px;
+  font-family: 'Unbounded', sans-serif;
+  text-decoration: none;
+  display: block;
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Capitalize font */
+  font-size: 1.1rem; /* Memberikan sedikit ukuran lebih besar */
+}
+
+#dropdown-menu li a:hover {
+  background-color: #d6a354;
+  color: #fff; /* Change text color on hover */
+}
+
+#dropdown-toggle {
+  color: #0e0d0d;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: 'Unbounded', sans-serif;
+  text-transform: uppercase; /* Capitalize font */
+  display: inline-block;
+}
+
+#dropdown-toggle:hover {
+  background-color: #d6a354;
+}
+
+#profile-nav:hover #dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
